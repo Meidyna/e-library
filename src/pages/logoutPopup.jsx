@@ -2,9 +2,6 @@ import React from "react";
 import "../styles/logoutPopup.css";
 import { useNavigate } from "react-router-dom";
 
-// 🔥 samakan cara import gambar seperti di Login.jsx
-const gambarlogout = new URL("../asset/keluar.png", import.meta.url).href;
-
 export default function LogoutPopup({ isOpen, onClose }) {
   const navigate = useNavigate();
 
@@ -19,8 +16,11 @@ export default function LogoutPopup({ isOpen, onClose }) {
       <div className="popup-container">
         <h2>Keluar dari akun ini?</h2>
 
-        {/* ✅ tampil dengan cara sama seperti Login.jsx */}
-        <img src={gambarlogout} alt="Confirm Logout" className="popup-image" />
+        <img
+          src={new URL("../asset/keluar.png", import.meta.url).href}
+          alt="Confirm Logout"
+          className="popup-image"
+        />
 
         <div className="popup-buttons">
           <button className="cancel-btn" onClick={onClose}>

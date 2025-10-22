@@ -12,6 +12,7 @@ import PeminjamanAktif from "../pages/peminjamanAktif";
 import PinjamBuku from "../pages/pinjamBuku";
 import TotalBuku from "../pages/totalBuku";
 import UbahPassword from "../pages/ubahPassword";
+import LupaPassword from "../pages/lupaPassword";
 import Sidebar from "../components/sidebar"; // pastikan path sudah benar
 
 // Komponen pembungkus agar Sidebar bisa beradaptasi dengan route
@@ -19,7 +20,9 @@ function AppRoutes() {
   const location = useLocation();
 
   // Daftar halaman yang TIDAK menampilkan sidebar
-  const hideSidebar = ["/", "/login", "/register"].includes(location.pathname);
+  const hideSidebar = ["/", "/login", "/register", "/lupaPassword"].includes(
+    location.pathname
+  );
 
   return (
     <div style={{ display: "flex" }}>
@@ -40,6 +43,7 @@ function AppRoutes() {
           <Route path="/" element={<Login />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/lupaPassword" element={<LupaPassword />} />
 
           {/* Halaman dengan sidebar */}
           <Route path="/home" element={<Home />} />

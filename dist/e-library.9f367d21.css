@@ -765,6 +765,64 @@ body, html {
   background-color: #554fd8;
 }
 
+.container-totalbuku {
+  background-color: #f5f7fa;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  padding: 60px 20px 40px;
+  font-family: Poppins, sans-serif;
+  display: flex;
+}
+
+.judul {
+  color: #333;
+  margin-top: 40px;
+  margin-bottom: 35px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.grid-totalbuku {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  justify-items: center;
+  gap: 25px;
+  width: 100%;
+  max-width: 700px;
+  display: grid;
+}
+
+.card {
+  text-align: center;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: center;
+  width: 180px;
+  height: 110px;
+  padding: 15px;
+  transition: transform .2s;
+  display: flex;
+  box-shadow: 0 3px 6px #0000001a;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.label {
+  color: #333;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.value {
+  color: #000;
+  font-size: 32px;
+  font-weight: 700;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

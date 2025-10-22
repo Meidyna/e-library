@@ -17463,6 +17463,8 @@ var _totalBuku = require("../pages/totalBuku");
 var _totalBukuDefault = parcelHelpers.interopDefault(_totalBuku);
 var _ubahPassword = require("../pages/ubahPassword");
 var _ubahPasswordDefault = parcelHelpers.interopDefault(_ubahPassword);
+var _lupaPassword = require("../pages/lupaPassword");
+var _lupaPasswordDefault = parcelHelpers.interopDefault(_lupaPassword);
 var _sidebar = require("../components/sidebar"); // pastikan path sudah benar
 var _sidebarDefault = parcelHelpers.interopDefault(_sidebar);
 var _s = $RefreshSig$();
@@ -17474,7 +17476,8 @@ function AppRoutes() {
     const hideSidebar = [
         "/",
         "/login",
-        "/register"
+        "/register",
+        "/lupaPassword"
     ].includes(location.pathname);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         style: {
@@ -17483,7 +17486,7 @@ function AppRoutes() {
         children: [
             !hideSidebar && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sidebarDefault.default), {}, void 0, false, {
                 fileName: "src/router/AppRouter.jsx",
-                lineNumber: 27,
+                lineNumber: 30,
                 columnNumber: 24
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -17499,44 +17502,32 @@ function AppRoutes() {
                             path: "/",
                             element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _loginDefault.default), {}, void 0, false, {
                                 fileName: "src/router/AppRouter.jsx",
-                                lineNumber: 40,
+                                lineNumber: 43,
                                 columnNumber: 36
                             }, void 0)
                         }, void 0, false, {
                             fileName: "src/router/AppRouter.jsx",
-                            lineNumber: 40,
+                            lineNumber: 43,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
                             path: "/login",
                             element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _loginDefault.default), {}, void 0, false, {
                                 fileName: "src/router/AppRouter.jsx",
-                                lineNumber: 41,
+                                lineNumber: 44,
                                 columnNumber: 41
                             }, void 0)
                         }, void 0, false, {
                             fileName: "src/router/AppRouter.jsx",
-                            lineNumber: 41,
+                            lineNumber: 44,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
                             path: "/register",
                             element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _registerDefault.default), {}, void 0, false, {
                                 fileName: "src/router/AppRouter.jsx",
-                                lineNumber: 42,
-                                columnNumber: 44
-                            }, void 0)
-                        }, void 0, false, {
-                            fileName: "src/router/AppRouter.jsx",
-                            lineNumber: 42,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                            path: "/home",
-                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homeDefault.default), {}, void 0, false, {
-                                fileName: "src/router/AppRouter.jsx",
                                 lineNumber: 45,
-                                columnNumber: 40
+                                columnNumber: 44
                             }, void 0)
                         }, void 0, false, {
                             fileName: "src/router/AppRouter.jsx",
@@ -17544,11 +17535,11 @@ function AppRoutes() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                            path: "/profil",
-                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profilDefault.default), {}, void 0, false, {
+                            path: "/lupaPassword",
+                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lupaPasswordDefault.default), {}, void 0, false, {
                                 fileName: "src/router/AppRouter.jsx",
                                 lineNumber: 46,
-                                columnNumber: 42
+                                columnNumber: 48
                             }, void 0)
                         }, void 0, false, {
                             fileName: "src/router/AppRouter.jsx",
@@ -17556,35 +17547,11 @@ function AppRoutes() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                            path: "/detail-buku/:id",
-                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _detailBukuDefault.default), {}, void 0, false, {
-                                fileName: "src/router/AppRouter.jsx",
-                                lineNumber: 47,
-                                columnNumber: 51
-                            }, void 0)
-                        }, void 0, false, {
-                            fileName: "src/router/AppRouter.jsx",
-                            lineNumber: 47,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                            path: "/notification",
-                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _notifikasiDefault.default), {}, void 0, false, {
-                                fileName: "src/router/AppRouter.jsx",
-                                lineNumber: 48,
-                                columnNumber: 48
-                            }, void 0)
-                        }, void 0, false, {
-                            fileName: "src/router/AppRouter.jsx",
-                            lineNumber: 48,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                            path: "/peminjaman",
-                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _peminjamanAktifDefault.default), {}, void 0, false, {
+                            path: "/home",
+                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homeDefault.default), {}, void 0, false, {
                                 fileName: "src/router/AppRouter.jsx",
                                 lineNumber: 49,
-                                columnNumber: 46
+                                columnNumber: 40
                             }, void 0)
                         }, void 0, false, {
                             fileName: "src/router/AppRouter.jsx",
@@ -17592,11 +17559,11 @@ function AppRoutes() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                            path: "/pinjamBuku",
-                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _pinjamBukuDefault.default), {}, void 0, false, {
+                            path: "/profil",
+                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profilDefault.default), {}, void 0, false, {
                                 fileName: "src/router/AppRouter.jsx",
                                 lineNumber: 50,
-                                columnNumber: 46
+                                columnNumber: 42
                             }, void 0)
                         }, void 0, false, {
                             fileName: "src/router/AppRouter.jsx",
@@ -17604,11 +17571,11 @@ function AppRoutes() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                            path: "/totalBuku",
-                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _totalBukuDefault.default), {}, void 0, false, {
+                            path: "/detail-buku/:id",
+                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _detailBukuDefault.default), {}, void 0, false, {
                                 fileName: "src/router/AppRouter.jsx",
                                 lineNumber: 51,
-                                columnNumber: 45
+                                columnNumber: 51
                             }, void 0)
                         }, void 0, false, {
                             fileName: "src/router/AppRouter.jsx",
@@ -17616,8 +17583,8 @@ function AppRoutes() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                            path: "/ubahPassword",
-                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ubahPasswordDefault.default), {}, void 0, false, {
+                            path: "/notification",
+                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _notifikasiDefault.default), {}, void 0, false, {
                                 fileName: "src/router/AppRouter.jsx",
                                 lineNumber: 52,
                                 columnNumber: 48
@@ -17626,22 +17593,70 @@ function AppRoutes() {
                             fileName: "src/router/AppRouter.jsx",
                             lineNumber: 52,
                             columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                            path: "/peminjaman",
+                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _peminjamanAktifDefault.default), {}, void 0, false, {
+                                fileName: "src/router/AppRouter.jsx",
+                                lineNumber: 53,
+                                columnNumber: 46
+                            }, void 0)
+                        }, void 0, false, {
+                            fileName: "src/router/AppRouter.jsx",
+                            lineNumber: 53,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                            path: "/pinjamBuku",
+                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _pinjamBukuDefault.default), {}, void 0, false, {
+                                fileName: "src/router/AppRouter.jsx",
+                                lineNumber: 54,
+                                columnNumber: 46
+                            }, void 0)
+                        }, void 0, false, {
+                            fileName: "src/router/AppRouter.jsx",
+                            lineNumber: 54,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                            path: "/totalBuku",
+                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _totalBukuDefault.default), {}, void 0, false, {
+                                fileName: "src/router/AppRouter.jsx",
+                                lineNumber: 55,
+                                columnNumber: 45
+                            }, void 0)
+                        }, void 0, false, {
+                            fileName: "src/router/AppRouter.jsx",
+                            lineNumber: 55,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                            path: "/ubahPassword",
+                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ubahPasswordDefault.default), {}, void 0, false, {
+                                fileName: "src/router/AppRouter.jsx",
+                                lineNumber: 56,
+                                columnNumber: 48
+                            }, void 0)
+                        }, void 0, false, {
+                            fileName: "src/router/AppRouter.jsx",
+                            lineNumber: 56,
+                            columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "src/router/AppRouter.jsx",
-                    lineNumber: 38,
+                    lineNumber: 41,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "src/router/AppRouter.jsx",
-                lineNumber: 30,
+                lineNumber: 33,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/router/AppRouter.jsx",
-        lineNumber: 25,
+        lineNumber: 28,
         columnNumber: 5
     }, this);
 }
@@ -17655,12 +17670,12 @@ function AppRouter() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.BrowserRouter), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppRoutes, {}, void 0, false, {
             fileName: "src/router/AppRouter.jsx",
-            lineNumber: 63,
+            lineNumber: 67,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "src/router/AppRouter.jsx",
-        lineNumber: 62,
+        lineNumber: 66,
         columnNumber: 5
     }, this);
 }
@@ -17674,7 +17689,7 @@ $RefreshReg$(_c1, "AppRouter");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-router-dom":"61z4w","../pages/home":"4Parm","../pages/login":"7NjgB","../pages/register":"9vR7p","../pages/profil":"dH9R6","../pages/detailBuku":"hBZQP","../pages/notifikasi":"6NLnB","../pages/peminjamanAktif":"hyyqK","../pages/pinjamBuku":"6ln0r","../pages/totalBuku":"3xjX9","../pages/ubahPassword":"bmBZU","../components/sidebar":"2ZI4q","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","../pages/logoutPopup":"4Bk6W"}],"61z4w":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-router-dom":"61z4w","../pages/home":"4Parm","../pages/login":"7NjgB","../pages/register":"9vR7p","../pages/profil":"dH9R6","../pages/detailBuku":"hBZQP","../pages/notifikasi":"6NLnB","../pages/peminjamanAktif":"hyyqK","../pages/pinjamBuku":"6ln0r","../pages/totalBuku":"3xjX9","../pages/ubahPassword":"bmBZU","../components/sidebar":"2ZI4q","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","../pages/logoutPopup":"4Bk6W","../pages/lupaPassword":"jB1rW"}],"61z4w":[function(require,module,exports,__globalThis) {
 /**
  * React Router DOM v6.27.0
  *
@@ -27387,8 +27402,8 @@ const Login = ()=>{
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                     className: "forgot-password",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                        href: "#",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                        to: "/lupaPassword",
                                         children: "Forgot Password?"
                                     }, void 0, false, {
                                         fileName: "src/pages/login.jsx",
@@ -58074,8 +58089,111 @@ $RefreshReg$(_c, "PinjamBuku");
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
 },{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","../styles/pinjamBuku.css":"cA9YE","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"cA9YE":[function() {},{}],"3xjX9":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$a1a3 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$a1a3.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$a1a3.prelude(module);
 
-},{}],"bmBZU":[function(require,module,exports,__globalThis) {
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _totalBukuCss = require("../styles/totalBuku.css");
+const TotalBuku = ()=>{
+    const data = [
+        {
+            label: "Total Buku",
+            value: 250,
+            color: "#b3e5fc"
+        },
+        {
+            label: "Buku Tersedia",
+            value: 180,
+            color: "#c8e6c9"
+        },
+        {
+            label: "Buku Dipinjam",
+            value: 70,
+            color: "#ffab91"
+        },
+        {
+            label: "Kategori Buku",
+            value: 5,
+            color: "#cfd8dc"
+        },
+        {
+            label: "Penerbit Terdaftar",
+            value: 20,
+            color: "#fff9c4"
+        }
+    ];
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "container-totalbuku",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                className: "judul",
+                children: "Peminjaman Buku"
+            }, void 0, false, {
+                fileName: "src/pages/totalBuku.jsx",
+                lineNumber: 15,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "grid-totalbuku",
+                children: data.map((item, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "card",
+                        style: {
+                            backgroundColor: item.color
+                        },
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: "label",
+                                children: item.label
+                            }, void 0, false, {
+                                fileName: "src/pages/totalBuku.jsx",
+                                lineNumber: 23,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                className: "value",
+                                children: item.value
+                            }, void 0, false, {
+                                fileName: "src/pages/totalBuku.jsx",
+                                lineNumber: 24,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, index, true, {
+                        fileName: "src/pages/totalBuku.jsx",
+                        lineNumber: 18,
+                        columnNumber: 11
+                    }, undefined))
+            }, void 0, false, {
+                fileName: "src/pages/totalBuku.jsx",
+                lineNumber: 16,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/pages/totalBuku.jsx",
+        lineNumber: 14,
+        columnNumber: 5
+    }, undefined);
+};
+_c = TotalBuku;
+exports.default = TotalBuku;
+var _c;
+$RefreshReg$(_c, "TotalBuku");
+
+  $parcel$ReactRefreshHelpers$a1a3.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","../styles/totalBuku.css":"4I2h3","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"4I2h3":[function() {},{}],"bmBZU":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$e086 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$e086.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -58599,8 +58717,6 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _logoutPopupCss = require("../styles/logoutPopup.css");
 var _reactRouterDom = require("react-router-dom");
 var _s = $RefreshSig$();
-// 🔥 samakan cara import gambar seperti di Login.jsx
-const gambarlogout = new URL(require("6615a14c80b02674")).href;
 function LogoutPopup({ isOpen, onClose }) {
     _s();
     const navigate = (0, _reactRouterDom.useNavigate)();
@@ -58617,16 +58733,16 @@ function LogoutPopup({ isOpen, onClose }) {
                     children: "Keluar dari akun ini?"
                 }, void 0, false, {
                     fileName: "src/pages/logoutPopup.jsx",
-                    lineNumber: 20,
+                    lineNumber: 17,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                    src: gambarlogout,
+                    src: new URL(require("6615a14c80b02674")).href,
                     alt: "Confirm Logout",
                     className: "popup-image"
                 }, void 0, false, {
                     fileName: "src/pages/logoutPopup.jsx",
-                    lineNumber: 23,
+                    lineNumber: 19,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -58659,12 +58775,12 @@ function LogoutPopup({ isOpen, onClose }) {
             ]
         }, void 0, true, {
             fileName: "src/pages/logoutPopup.jsx",
-            lineNumber: 19,
+            lineNumber: 16,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "src/pages/logoutPopup.jsx",
-        lineNumber: 18,
+        lineNumber: 15,
         columnNumber: 5
     }, this);
 }
@@ -58682,7 +58798,7 @@ $RefreshReg$(_c, "LogoutPopup");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","../styles/logoutPopup.css":"eWj7E","react-router-dom":"61z4w","6615a14c80b02674":"dDIN0","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"eWj7E":[function() {},{}],"dDIN0":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","../styles/logoutPopup.css":"eWj7E","react-router-dom":"61z4w","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","6615a14c80b02674":"dDIN0"}],"eWj7E":[function() {},{}],"dDIN0":[function(require,module,exports,__globalThis) {
 module.exports = module.bundle.resolve("keluar.9d3758bd.png") + "?" + Date.now();
 
 },{}],"7zrFF":[function(require,module,exports,__globalThis) {
@@ -95555,6 +95671,190 @@ function FaRegWindowRestore(props) {
     })(props);
 }
 
-},{"../lib/index.mjs":"8gE95","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}]},["hiyDA","gYcKb"], "gYcKb", "parcelRequire0f49", {}, "./", "/", "http://localhost:1234")
+},{"../lib/index.mjs":"8gE95","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"jB1rW":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$c8af = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$c8af.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$c8af.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _ubahPasswordCss = require("../styles/ubahPassword.css");
+var _fa = require("react-icons/fa");
+var _reactRouterDom = require("react-router-dom"); // ⬅️ tambahkan ini
+var _s = $RefreshSig$();
+const UbahPassword = ()=>{
+    _s();
+    const [showPassword, setShowPassword] = (0, _react.useState)({
+        lama: false,
+        baru: false,
+        verifikasi: false
+    });
+    const navigate = (0, _reactRouterDom.useNavigate)(); // ⬅️ tambahkan ini
+    const togglePassword = (field)=>{
+        setShowPassword({
+            ...showPassword,
+            [field]: !showPassword[field]
+        });
+    };
+    const handleSubmit = (e)=>{
+        e.preventDefault();
+        alert("Password berhasil disimpan!");
+        navigate("/login"); // ⬅️ arahkan ke halaman login setelah submit
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "ubahpassword-container",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "ubahpassword-box",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    className: "ubahpassword-title",
+                    children: "Ubah Password"
+                }, void 0, false, {
+                    fileName: "src/pages/lupaPassword.jsx",
+                    lineNumber: 28,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    className: "ubahpassword-subtitle",
+                    children: "Ubah Password Anda Disini"
+                }, void 0, false, {
+                    fileName: "src/pages/lupaPassword.jsx",
+                    lineNumber: 29,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+                    onSubmit: handleSubmit,
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "form-group",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                    children: "Password Baru"
+                                }, void 0, false, {
+                                    fileName: "src/pages/lupaPassword.jsx",
+                                    lineNumber: 34,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "input-wrapper",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                            type: showPassword.baru ? "text" : "password",
+                                            placeholder: "",
+                                            required: true
+                                        }, void 0, false, {
+                                            fileName: "src/pages/lupaPassword.jsx",
+                                            lineNumber: 36,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            onClick: ()=>togglePassword("baru")
+                                        }, void 0, false, {
+                                            fileName: "src/pages/lupaPassword.jsx",
+                                            lineNumber: 41,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/pages/lupaPassword.jsx",
+                                    lineNumber: 35,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/pages/lupaPassword.jsx",
+                            lineNumber: 33,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "form-group",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                    children: "Verifikasi Password Baru"
+                                }, void 0, false, {
+                                    fileName: "src/pages/lupaPassword.jsx",
+                                    lineNumber: 47,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "input-wrapper",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                            type: showPassword.verifikasi ? "text" : "password",
+                                            placeholder: "",
+                                            required: true
+                                        }, void 0, false, {
+                                            fileName: "src/pages/lupaPassword.jsx",
+                                            lineNumber: 49,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            onClick: ()=>togglePassword("verifikasi")
+                                        }, void 0, false, {
+                                            fileName: "src/pages/lupaPassword.jsx",
+                                            lineNumber: 54,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/pages/lupaPassword.jsx",
+                                    lineNumber: 48,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/pages/lupaPassword.jsx",
+                            lineNumber: 46,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            type: "submit",
+                            className: "simpan-btn",
+                            children: "Simpan Password"
+                        }, void 0, false, {
+                            fileName: "src/pages/lupaPassword.jsx",
+                            lineNumber: 58,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/pages/lupaPassword.jsx",
+                    lineNumber: 31,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/pages/lupaPassword.jsx",
+            lineNumber: 27,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/pages/lupaPassword.jsx",
+        lineNumber: 26,
+        columnNumber: 5
+    }, undefined);
+};
+_s(UbahPassword, "PwuisX7NbTJRi1O8HNfBBcT1DL0=", false, function() {
+    return [
+        (0, _reactRouterDom.useNavigate)
+    ];
+});
+_c = UbahPassword;
+exports.default = UbahPassword;
+var _c;
+$RefreshReg$(_c, "UbahPassword");
+
+  $parcel$ReactRefreshHelpers$c8af.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","../styles/ubahPassword.css":"DugWD","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","react-icons/fa":"dS1yL","react-router-dom":"61z4w"}],"DugWD":[function() {},{}]},["hiyDA","gYcKb"], "gYcKb", "parcelRequire0f49", {}, "./", "/", "http://localhost:1234")
 
 //# sourceMappingURL=e-library.ad93b51f.js.map

@@ -67,7 +67,7 @@ const Login = () => {
             </div>
 
             <div className="forgot-password">
-              <a href="#">Forgot Password?</a>
+              <Link to="/lupaPassword">Forgot Password?</Link>
             </div>
 
             {/* ✅ tombol login yang akan pindah ke Home */}
