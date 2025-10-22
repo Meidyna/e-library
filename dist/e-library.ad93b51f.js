@@ -17544,11 +17544,11 @@ function AppRoutes() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                            path: "/profile",
+                            path: "/profil",
                             element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profilDefault.default), {}, void 0, false, {
                                 fileName: "src/router/AppRouter.jsx",
                                 lineNumber: 46,
-                                columnNumber: 43
+                                columnNumber: 42
                             }, void 0)
                         }, void 0, false, {
                             fileName: "src/router/AppRouter.jsx",
@@ -57188,6 +57188,293 @@ module.exports = module.bundle.resolve("gambarregister.ef5a8ad2.png") + "?" + Da
 module.exports = module.bundle.resolve("gambarorange.60aae5fc.png") + "?" + Date.now();
 
 },{}],"dH9R6":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$07cd = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$07cd.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$07cd.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>Profil);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _fa = require("react-icons/fa");
+var _profilCss = require("../styles/profil.css");
+var _reactRouterDom = require("react-router-dom");
+var _s = $RefreshSig$();
+const defaultAvatar = new URL(require("8e9845bbd03f647d")).href;
+function Profil() {
+    _s();
+    const [nama, setNama] = (0, _react.useState)("Fahtymah");
+    const [email, setEmail] = (0, _react.useState)("fahtymah@gmail.com");
+    const [fotoProfil, setFotoProfil] = (0, _react.useState)(defaultAvatar);
+    const [editNama, setEditNama] = (0, _react.useState)(false);
+    const [editEmail, setEditEmail] = (0, _react.useState)(false);
+    const [isChanged, setIsChanged] = (0, _react.useState)(false);
+    const [notif, setNotif] = (0, _react.useState)({
+        show: false,
+        message: "",
+        type: ""
+    });
+    const handleUploadFoto = (e)=>{
+        const file = e.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onloadend = ()=>{
+                setFotoProfil(reader.result);
+                setIsChanged(true);
+            };
+            reader.readAsDataURL(file);
+        }
+    };
+    const handleEditNama = ()=>setEditNama(true);
+    const handleEditEmail = ()=>setEditEmail(true);
+    const handleChangeNama = (e)=>{
+        setNama(e.target.value);
+        setIsChanged(true);
+    };
+    const handleChangeEmail = (e)=>{
+        setEmail(e.target.value);
+        setIsChanged(true);
+    };
+    const validateEmail = (email)=>/\S+@\S+\.\S+/.test(email);
+    const handleSimpan = ()=>{
+        if (!nama.trim() || !email.trim()) {
+            setNotif({
+                show: true,
+                message: "Nama dan email tidak boleh kosong!",
+                type: "error"
+            });
+            setTimeout(()=>setNotif({
+                    show: false
+                }), 3000);
+            return;
+        }
+        if (!validateEmail(email)) {
+            setNotif({
+                show: true,
+                message: "Format email tidak valid!",
+                type: "error"
+            });
+            setTimeout(()=>setNotif({
+                    show: false
+                }), 3000);
+            return;
+        }
+        setEditNama(false);
+        setEditEmail(false);
+        setIsChanged(false);
+        setNotif({
+            show: true,
+            message: "\u2705 Perubahan berhasil disimpan!",
+            type: "success"
+        });
+        setTimeout(()=>setNotif({
+                show: false
+            }), 3000);
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "profil-container",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "profil-card",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    children: "Profil Saya"
+                }, void 0, false, {
+                    fileName: "src/pages/profil.jsx",
+                    lineNumber: 80,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "profil-foto-container",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            src: fotoProfil,
+                            alt: "Foto Profil",
+                            className: "profil-foto"
+                        }, void 0, false, {
+                            fileName: "src/pages/profil.jsx",
+                            lineNumber: 83,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                            htmlFor: "upload-foto",
+                            className: "edit-foto-icon",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _fa.FaPen), {}, void 0, false, {
+                                fileName: "src/pages/profil.jsx",
+                                lineNumber: 85,
+                                columnNumber: 13
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "src/pages/profil.jsx",
+                            lineNumber: 84,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            id: "upload-foto",
+                            type: "file",
+                            accept: "image/*",
+                            onChange: handleUploadFoto,
+                            style: {
+                                display: "none"
+                            }
+                        }, void 0, false, {
+                            fileName: "src/pages/profil.jsx",
+                            lineNumber: 87,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/pages/profil.jsx",
+                    lineNumber: 82,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    className: "profil-info",
+                    children: "Informasi mengenai profil anda ada disini !"
+                }, void 0, false, {
+                    fileName: "src/pages/profil.jsx",
+                    lineNumber: 96,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "profil-form",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                            children: "Nama Lengkap"
+                        }, void 0, false, {
+                            fileName: "src/pages/profil.jsx",
+                            lineNumber: 101,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "input-with-icon",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                    type: "text",
+                                    value: nama,
+                                    disabled: !editNama,
+                                    onChange: handleChangeNama,
+                                    placeholder: "Masukkan nama lengkap"
+                                }, void 0, false, {
+                                    fileName: "src/pages/profil.jsx",
+                                    lineNumber: 103,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _fa.FaPen), {
+                                    className: "edit-icon",
+                                    onClick: handleEditNama
+                                }, void 0, false, {
+                                    fileName: "src/pages/profil.jsx",
+                                    lineNumber: 110,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/pages/profil.jsx",
+                            lineNumber: 102,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                            children: "Email"
+                        }, void 0, false, {
+                            fileName: "src/pages/profil.jsx",
+                            lineNumber: 113,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "input-with-icon",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                    type: "email",
+                                    value: email,
+                                    disabled: !editEmail,
+                                    onChange: handleChangeEmail,
+                                    placeholder: "Masukkan email anda"
+                                }, void 0, false, {
+                                    fileName: "src/pages/profil.jsx",
+                                    lineNumber: 115,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _fa.FaPen), {
+                                    className: "edit-icon",
+                                    onClick: handleEditEmail
+                                }, void 0, false, {
+                                    fileName: "src/pages/profil.jsx",
+                                    lineNumber: 122,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/pages/profil.jsx",
+                            lineNumber: 114,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            to: "/ubahPassword",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                className: "ubah-password-btn",
+                                children: "Ubah Password"
+                            }, void 0, false, {
+                                fileName: "src/pages/profil.jsx",
+                                lineNumber: 126,
+                                columnNumber: 13
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "src/pages/profil.jsx",
+                            lineNumber: 125,
+                            columnNumber: 11
+                        }, this),
+                        isChanged && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            className: "simpan-btn",
+                            onClick: handleSimpan,
+                            children: "Simpan Perubahan"
+                        }, void 0, false, {
+                            fileName: "src/pages/profil.jsx",
+                            lineNumber: 130,
+                            columnNumber: 13
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/pages/profil.jsx",
+                    lineNumber: 100,
+                    columnNumber: 9
+                }, this),
+                notif.show && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: `notif-popup ${notif.type}`,
+                    children: notif.message
+                }, void 0, false, {
+                    fileName: "src/pages/profil.jsx",
+                    lineNumber: 137,
+                    columnNumber: 11
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "src/pages/profil.jsx",
+            lineNumber: 79,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "src/pages/profil.jsx",
+        lineNumber: 78,
+        columnNumber: 5
+    }, this);
+}
+_s(Profil, "hmr2ud1Hs4oxaeLQNcwmGdoYhoQ=");
+_c = Profil;
+var _c;
+$RefreshReg$(_c, "Profil");
+
+  $parcel$ReactRefreshHelpers$07cd.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-icons/fa":"dS1yL","../styles/profil.css":"fzasJ","8e9845bbd03f647d":"5bcAT","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","react-router-dom":"61z4w"}],"fzasJ":[function() {},{}],"5bcAT":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("profil.011a218b.png") + "?" + Date.now();
 
 },{}],"hBZQP":[function(require,module,exports,__globalThis) {
 

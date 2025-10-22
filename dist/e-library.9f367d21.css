@@ -11,15 +11,6 @@
   font-size: 18px;
 }
 
-body, html {
-  background-color: #0000;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
 .login-container {
   background-color: #5a4ff3;
   width: 100vw;
@@ -354,6 +345,204 @@ input:focus {
 
   .register-text {
     font-size: 1.5rem;
+  }
+}
+
+.profil-container {
+  background-color: #f3f5fc;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  display: flex;
+}
+
+body, html {
+  background-color: #f3f5fc;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.profil-card {
+  text-align: center;
+  background-color: #fff;
+  border: 2px solid #4b4ded;
+  border-radius: 16px;
+  width: 400px;
+  padding: 40px;
+  position: relative;
+  box-shadow: 0 4px 10px #0000001a;
+}
+
+.profil-card h2 {
+  color: #000;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.profil-foto-container {
+  margin-bottom: 10px;
+  display: inline-block;
+  position: relative;
+}
+
+.profil-foto {
+  object-fit: cover;
+  border: 3px solid #4b4ded;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.edit-foto-icon {
+  color: #fff;
+  cursor: pointer;
+  background-color: #4b4ded;
+  border-radius: 50%;
+  padding: 6px;
+  font-size: 12px;
+  transition: all .3s;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.edit-foto-icon:hover {
+  background-color: #2e2f91;
+}
+
+.profil-info {
+  color: #adb5bd;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+.profil-form {
+  text-align: left;
+}
+
+.profil-form label {
+  color: #000;
+  margin-bottom: 5px;
+  font-weight: 600;
+  display: block;
+}
+
+.input-with-icon {
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.input-with-icon input {
+  flex: 1;
+  padding-right: 35px;
+}
+
+.input-with-icon input:disabled {
+  color: #555;
+  cursor: not-allowed;
+  background-color: #f9f9f9;
+}
+
+.input-with-icon input:focus {
+  background-color: #fff;
+  border-color: #4b4ded;
+}
+
+.edit-icon {
+  color: #6b7280;
+  cursor: pointer;
+  transition: color .3s;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-100%);
+}
+
+.edit-icon:hover {
+  color: #4f46e5;
+}
+
+.ubah-password-btn {
+  color: #fff;
+  cursor: pointer;
+  background-color: #ff8356;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  padding: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all .3s;
+}
+
+.ubah-password-btn:hover {
+  background-color: #f8723a;
+}
+
+.simpan-btn {
+  color: #fff;
+  cursor: pointer;
+  background-color: #4b4ded;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all .3s;
+  display: block;
+}
+
+.simpan-btn:hover {
+  background-color: #2e2f91;
+}
+
+.notif-popup {
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 14px;
+  animation: 3s forwards fadeInOut;
+  position: absolute;
+  bottom: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.notif-popup.success {
+  color: #218838;
+  background-color: #e9ffe9;
+  border: 1px solid #28a745;
+}
+
+.notif-popup.error {
+  color: #d93025;
+  background-color: #ffeaea;
+  border: 1px solid #ff4d4d;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%)translateY(10px);
+  }
+
+  10% {
+    opacity: 1;
+    transform: translateX(-50%)translateY(0);
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-50%)translateY(-10px);
   }
 }
 
