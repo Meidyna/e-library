@@ -12,7 +12,7 @@ html {
   margin: 0; /* tambahkan ini */
   padding: 0; /* pastikan juga ini ada */
   overflow: hidden;
-  background-color: #f6f8ff;
+  background-color: transparent; /* biarkan transparan */
 }
 
 .login-container {

@@ -207,11 +207,11 @@
       });
     }
   }
-})({"AwdAu":[function(require,module,exports,__globalThis) {
+})({"hiyDA":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
-var HMR_SERVER_PORT = 57767;
+var HMR_SERVER_PORT = 1234;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "439701173a9199ea";
 var HMR_USE_SSE = false;
@@ -27236,7 +27236,7 @@ const Login = ()=>{
                                 className: "login-logo"
                             }, void 0, false, {
                                 fileName: "src/pages/login.jsx",
-                                lineNumber: 25,
+                                lineNumber: 26,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27247,7 +27247,7 @@ const Login = ()=>{
                                         children: "Welcome"
                                     }, void 0, false, {
                                         fileName: "src/pages/login.jsx",
-                                        lineNumber: 31,
+                                        lineNumber: 32,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -27255,19 +27255,19 @@ const Login = ()=>{
                                         children: "Back!"
                                     }, void 0, false, {
                                         fileName: "src/pages/login.jsx",
-                                        lineNumber: 32,
+                                        lineNumber: 33,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/pages/login.jsx",
-                                lineNumber: 30,
+                                lineNumber: 31,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/pages/login.jsx",
-                        lineNumber: 24,
+                        lineNumber: 25,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -27276,13 +27276,13 @@ const Login = ()=>{
                         className: "gambarlogin"
                     }, void 0, false, {
                         fileName: "src/pages/login.jsx",
-                        lineNumber: 36,
+                        lineNumber: 37,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/pages/login.jsx",
-                lineNumber: 23,
+                lineNumber: 24,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27294,14 +27294,14 @@ const Login = ()=>{
                             children: "Hello! Welcome back."
                         }, void 0, false, {
                             fileName: "src/pages/login.jsx",
-                            lineNumber: 42,
+                            lineNumber: 43,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                             children: "Login with the data you entered during Registration."
                         }, void 0, false, {
                             fileName: "src/pages/login.jsx",
-                            lineNumber: 43,
+                            lineNumber: 44,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
@@ -27315,13 +27315,13 @@ const Login = ()=>{
                                             children: "*"
                                         }, void 0, false, {
                                             fileName: "src/pages/login.jsx",
-                                            lineNumber: 47,
+                                            lineNumber: 48,
                                             columnNumber: 28
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/pages/login.jsx",
-                                    lineNumber: 46,
+                                    lineNumber: 47,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -27330,7 +27330,7 @@ const Login = ()=>{
                                     required: true
                                 }, void 0, false, {
                                     fileName: "src/pages/login.jsx",
-                                    lineNumber: 49,
+                                    lineNumber: 50,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
@@ -27341,13 +27341,13 @@ const Login = ()=>{
                                             children: "*"
                                         }, void 0, false, {
                                             fileName: "src/pages/login.jsx",
-                                            lineNumber: 52,
+                                            lineNumber: 53,
                                             columnNumber: 23
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/pages/login.jsx",
-                                    lineNumber: 51,
+                                    lineNumber: 52,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27355,11 +27355,11 @@ const Login = ()=>{
                                     children: [
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                                             type: showPassword ? "text" : "password",
-                                            placeholder: "**************",
+                                            placeholder: "",
                                             required: true
                                         }, void 0, false, {
                                             fileName: "src/pages/login.jsx",
-                                            lineNumber: 55,
+                                            lineNumber: 56,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -27367,22 +27367,22 @@ const Login = ()=>{
                                             onClick: ()=>setShowPassword(!showPassword),
                                             children: showPassword ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _fa.FaEyeSlash), {}, void 0, false, {
                                                 fileName: "src/pages/login.jsx",
-                                                lineNumber: 64,
+                                                lineNumber: 65,
                                                 columnNumber: 33
                                             }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _fa.FaEye), {}, void 0, false, {
                                                 fileName: "src/pages/login.jsx",
-                                                lineNumber: 64,
+                                                lineNumber: 65,
                                                 columnNumber: 50
                                             }, undefined)
                                         }, void 0, false, {
                                             fileName: "src/pages/login.jsx",
-                                            lineNumber: 60,
+                                            lineNumber: 61,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/pages/login.jsx",
-                                    lineNumber: 54,
+                                    lineNumber: 55,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27392,12 +27392,12 @@ const Login = ()=>{
                                         children: "Forgot Password?"
                                     }, void 0, false, {
                                         fileName: "src/pages/login.jsx",
-                                        lineNumber: 69,
+                                        lineNumber: 70,
                                         columnNumber: 15
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/pages/login.jsx",
-                                    lineNumber: 68,
+                                    lineNumber: 69,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -27406,48 +27406,48 @@ const Login = ()=>{
                                     children: "Login Now"
                                 }, void 0, false, {
                                     fileName: "src/pages/login.jsx",
-                                    lineNumber: 73,
+                                    lineNumber: 74,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/pages/login.jsx",
-                            lineNumber: 45,
+                            lineNumber: 46,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                             className: "register-text",
                             children: [
                                 "Don\u2019t have an Account? ",
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                    href: "#",
-                                    children: "REGISTER"
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    to: "/register",
+                                    children: "register"
                                 }, void 0, false, {
                                     fileName: "src/pages/login.jsx",
-                                    lineNumber: 79,
+                                    lineNumber: 80,
                                     columnNumber: 36
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/pages/login.jsx",
-                            lineNumber: 78,
+                            lineNumber: 79,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/login.jsx",
-                    lineNumber: 41,
+                    lineNumber: 42,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/pages/login.jsx",
-                lineNumber: 40,
+                lineNumber: 41,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/pages/login.jsx",
-        lineNumber: 21,
+        lineNumber: 22,
         columnNumber: 5
     }, undefined);
 };
@@ -56854,6 +56854,338 @@ var IconContext = (0, _reactDefault.default).createContext && /*#__PURE__*/ (0, 
 module.exports = module.bundle.resolve("logo.70980cd9.png") + "?" + Date.now();
 
 },{}],"9vR7p":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$a0e4 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$a0e4.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$a0e4.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _registerCss = require("../styles/register.css");
+var _fa = require("react-icons/fa");
+var _reactRouterDom = require("react-router-dom");
+var _s = $RefreshSig$();
+// ✅ Gunakan new URL agar path gambar selalu benar di semua bundler
+const logo = new URL(require("831050e40d5cefbb")).href;
+const gambarregister = new URL(require("b46ac5c967cd4412")).href;
+const gambarorange = new URL(require("eac89f26ab28a064")).href;
+const Register = ()=>{
+    _s();
+    const [showPassword, setShowPassword] = (0, _react.useState)(false);
+    const navigate = (0, _reactRouterDom.useNavigate)(); // ✅ Tambahkan untuk navigasi antar halaman
+    // ✅ Fungsi ketika tombol Sign Up diklik
+    const handleSubmit = (e)=>{
+        e.preventDefault(); // supaya halaman tidak reload
+        // 👉 Di sini kamu bisa tambahkan logika validasi atau API call nanti
+        navigate("/home"); // setelah sukses, langsung pindah ke halaman Home
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "register-container",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "register-left",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "signup-box",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                            className: "register-title",
+                            children: "Please Fill this form to create an Account"
+                        }, void 0, false, {
+                            fileName: "src/pages/register.jsx",
+                            lineNumber: 28,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+                            onSubmit: handleSubmit,
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "form-group",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                            children: [
+                                                "Full Name ",
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    children: "*"
+                                                }, void 0, false, {
+                                                    fileName: "src/pages/register.jsx",
+                                                    lineNumber: 36,
+                                                    columnNumber: 27
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/pages/register.jsx",
+                                            lineNumber: 35,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                            type: "text",
+                                            placeholder: "Enter your full name",
+                                            required: true
+                                        }, void 0, false, {
+                                            fileName: "src/pages/register.jsx",
+                                            lineNumber: 38,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/pages/register.jsx",
+                                    lineNumber: 34,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "form-group",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                            children: [
+                                                "Email Address ",
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    children: "*"
+                                                }, void 0, false, {
+                                                    fileName: "src/pages/register.jsx",
+                                                    lineNumber: 43,
+                                                    columnNumber: 31
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/pages/register.jsx",
+                                            lineNumber: 42,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                            type: "email",
+                                            placeholder: "Enter your email",
+                                            required: true
+                                        }, void 0, false, {
+                                            fileName: "src/pages/register.jsx",
+                                            lineNumber: 45,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/pages/register.jsx",
+                                    lineNumber: 41,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "form-group",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                            children: [
+                                                "Username ",
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    children: "*"
+                                                }, void 0, false, {
+                                                    fileName: "src/pages/register.jsx",
+                                                    lineNumber: 50,
+                                                    columnNumber: 26
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/pages/register.jsx",
+                                            lineNumber: 49,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                            type: "text",
+                                            placeholder: "Enter your username",
+                                            required: true
+                                        }, void 0, false, {
+                                            fileName: "src/pages/register.jsx",
+                                            lineNumber: 52,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/pages/register.jsx",
+                                    lineNumber: 48,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "form-group password-group",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                            children: [
+                                                "Password ",
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    children: "*"
+                                                }, void 0, false, {
+                                                    fileName: "src/pages/register.jsx",
+                                                    lineNumber: 57,
+                                                    columnNumber: 26
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/pages/register.jsx",
+                                            lineNumber: 56,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "password-input",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                                    type: showPassword ? "text" : "password",
+                                                    placeholder: "Enter your password",
+                                                    required: true
+                                                }, void 0, false, {
+                                                    fileName: "src/pages/register.jsx",
+                                                    lineNumber: 60,
+                                                    columnNumber: 17
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    className: "toggle-password",
+                                                    onClick: ()=>setShowPassword(!showPassword)
+                                                }, void 0, false, {
+                                                    fileName: "src/pages/register.jsx",
+                                                    lineNumber: 65,
+                                                    columnNumber: 17
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/pages/register.jsx",
+                                            lineNumber: 59,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/pages/register.jsx",
+                                    lineNumber: 55,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                    type: "submit",
+                                    className: "signup-btn",
+                                    children: "Sign Up"
+                                }, void 0, false, {
+                                    fileName: "src/pages/register.jsx",
+                                    lineNumber: 73,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    className: "login-link",
+                                    children: [
+                                        "Already have an account? ",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                            to: "/login",
+                                            children: "LOGIN"
+                                        }, void 0, false, {
+                                            fileName: "src/pages/register.jsx",
+                                            lineNumber: 78,
+                                            columnNumber: 40
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/pages/register.jsx",
+                                    lineNumber: 77,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/pages/register.jsx",
+                            lineNumber: 33,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/pages/register.jsx",
+                    lineNumber: 27,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/pages/register.jsx",
+                lineNumber: 26,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "register-right",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        src: logo,
+                        alt: "Logo",
+                        className: "logo"
+                    }, void 0, false, {
+                        fileName: "src/pages/register.jsx",
+                        lineNumber: 86,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                        className: "register-text",
+                        children: [
+                            "Explore the World ",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                fileName: "src/pages/register.jsx",
+                                lineNumber: 88,
+                                columnNumber: 29
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                className: "highlight",
+                                children: "with BOOKS"
+                            }, void 0, false, {
+                                fileName: "src/pages/register.jsx",
+                                lineNumber: 89,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/pages/register.jsx",
+                        lineNumber: 87,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        src: gambarregister,
+                        alt: "Register Illustration",
+                        className: "gambarregister"
+                    }, void 0, false, {
+                        fileName: "src/pages/register.jsx",
+                        lineNumber: 91,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        src: gambarorange,
+                        alt: "Orange Shape",
+                        className: "gambarorange"
+                    }, void 0, false, {
+                        fileName: "src/pages/register.jsx",
+                        lineNumber: 96,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/pages/register.jsx",
+                lineNumber: 85,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/pages/register.jsx",
+        lineNumber: 24,
+        columnNumber: 5
+    }, undefined);
+};
+_s(Register, "L7uqaZwoMFWn3TOj0WsE6Mp01vk=", false, function() {
+    return [
+        (0, _reactRouterDom.useNavigate)
+    ];
+});
+_c = Register;
+exports.default = Register;
+var _c;
+$RefreshReg$(_c, "Register");
+
+  $parcel$ReactRefreshHelpers$a0e4.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","../styles/register.css":"goLZw","react-icons/fa":"dS1yL","react-router-dom":"61z4w","831050e40d5cefbb":"7GJt1","b46ac5c967cd4412":"4GRQf","eac89f26ab28a064":"4Eoag","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"goLZw":[function() {},{}],"4GRQf":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("gambarregister.ef5a8ad2.png") + "?" + Date.now();
+
+},{}],"4Eoag":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("gambarorange.60aae5fc.png") + "?" + Date.now();
 
 },{}],"dH9R6":[function(require,module,exports,__globalThis) {
 
@@ -94423,6 +94755,6 @@ function FaRegWindowRestore(props) {
     })(props);
 }
 
-},{"../lib/index.mjs":"8gE95","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}]},["AwdAu","gYcKb"], "gYcKb", "parcelRequire0f49", {}, "./", "/", "http://localhost:57767")
+},{"../lib/index.mjs":"8gE95","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}]},["hiyDA","gYcKb"], "gYcKb", "parcelRequire0f49", {}, "./", "/", "http://localhost:1234")
 
 //# sourceMappingURL=e-library.ad93b51f.js.map

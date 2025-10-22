@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/login.css";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const gambarlogin = new URL("../asset/gambarlogin.png", import.meta.url).href;
 
@@ -54,7 +55,7 @@ const Login = () => {
             <div className="password-wrapper">
               <input
                 type={showPassword ? "text" : "password"}
-                placeholder="**************"
+                placeholder=""
                 required
               />
               <span
@@ -76,7 +77,7 @@ const Login = () => {
           </form>
 
           <p className="register-text">
-            Don’t have an Account? <a href="#">REGISTER</a>
+            Don’t have an Account? <Link to="/register">register</Link>
           </p>
         </div>
       </div>
