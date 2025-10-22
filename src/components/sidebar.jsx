@@ -25,7 +25,6 @@ const Sidebar = () => {
 
   const menuItems = [
     { path: "/home", label: "Beranda", icon: <FaHome /> },
-    { path: "/kategori", label: "Kategori", icon: <FaThLarge /> },
     { path: "/totalBuku", label: "Total Buku", icon: <FaBook /> },
     { path: "/pinjamBuku", label: "Pinjam Buku", icon: <FaBookOpenReader /> },
     {

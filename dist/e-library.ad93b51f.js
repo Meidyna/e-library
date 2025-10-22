@@ -58448,20 +58448,11 @@ const Sidebar = ()=>{
             }, undefined)
         },
         {
-            path: "/kategori",
-            label: "Kategori",
-            icon: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _fa.FaThLarge), {}, void 0, false, {
-                fileName: "src/components/sidebar.jsx",
-                lineNumber: 28,
-                columnNumber: 51
-            }, undefined)
-        },
-        {
             path: "/totalBuku",
             label: "Total Buku",
             icon: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _fa.FaBook), {}, void 0, false, {
                 fileName: "src/components/sidebar.jsx",
-                lineNumber: 29,
+                lineNumber: 28,
                 columnNumber: 54
             }, undefined)
         },
@@ -58470,7 +58461,7 @@ const Sidebar = ()=>{
             label: "Pinjam Buku",
             icon: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _fa6.FaBookOpenReader), {}, void 0, false, {
                 fileName: "src/components/sidebar.jsx",
-                lineNumber: 30,
+                lineNumber: 29,
                 columnNumber: 56
             }, undefined)
         },
@@ -58479,7 +58470,7 @@ const Sidebar = ()=>{
             label: "Peminjaman Aktif",
             icon: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _fa.FaClipboardList), {}, void 0, false, {
                 fileName: "src/components/sidebar.jsx",
-                lineNumber: 34,
+                lineNumber: 33,
                 columnNumber: 13
             }, undefined)
         }
@@ -58490,7 +58481,7 @@ const Sidebar = ()=>{
             label: "Profil",
             icon: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _fa.FaUser), {}, void 0, false, {
                 fileName: "src/components/sidebar.jsx",
-                lineNumber: 39,
+                lineNumber: 38,
                 columnNumber: 47
             }, undefined)
         },
@@ -58499,7 +58490,7 @@ const Sidebar = ()=>{
             label: "Notifikasi",
             icon: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _fa.FaBell), {}, void 0, false, {
                 fileName: "src/components/sidebar.jsx",
-                lineNumber: 40,
+                lineNumber: 39,
                 columnNumber: 57
             }, undefined)
         }
@@ -58514,7 +58505,7 @@ const Sidebar = ()=>{
                         children: "E-Library"
                     }, void 0, false, {
                         fileName: "src/components/sidebar.jsx",
-                        lineNumber: 46,
+                        lineNumber: 45,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -58530,25 +58521,25 @@ const Sidebar = ()=>{
                                                 children: item.icon
                                             }, void 0, false, {
                                                 fileName: "src/components/sidebar.jsx",
-                                                lineNumber: 54,
+                                                lineNumber: 53,
                                                 columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                 children: item.label
                                             }, void 0, false, {
                                                 fileName: "src/components/sidebar.jsx",
-                                                lineNumber: 55,
+                                                lineNumber: 54,
                                                 columnNumber: 17
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/components/sidebar.jsx",
-                                        lineNumber: 53,
+                                        lineNumber: 52,
                                         columnNumber: 15
                                     }, undefined)
                                 }, item.path, false, {
                                     fileName: "src/components/sidebar.jsx",
-                                    lineNumber: 49,
+                                    lineNumber: 48,
                                     columnNumber: 13
                                 }, undefined)),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -58559,38 +58550,38 @@ const Sidebar = ()=>{
                                         className: "icon",
                                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _fa.FaCog), {}, void 0, false, {
                                             fileName: "src/components/sidebar.jsx",
-                                            lineNumber: 65,
+                                            lineNumber: 64,
                                             columnNumber: 15
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/components/sidebar.jsx",
-                                        lineNumber: 64,
+                                        lineNumber: 63,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                         children: "Pengaturan"
                                     }, void 0, false, {
                                         fileName: "src/components/sidebar.jsx",
-                                        lineNumber: 67,
+                                        lineNumber: 66,
                                         columnNumber: 13
                                     }, undefined),
                                     openSettings ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _fa.FaChevronUp), {
                                         className: "arrow-icon"
                                     }, void 0, false, {
                                         fileName: "src/components/sidebar.jsx",
-                                        lineNumber: 69,
+                                        lineNumber: 68,
                                         columnNumber: 15
                                     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _fa.FaChevronDown), {
                                         className: "arrow-icon"
                                     }, void 0, false, {
                                         fileName: "src/components/sidebar.jsx",
-                                        lineNumber: 71,
+                                        lineNumber: 70,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/sidebar.jsx",
-                                lineNumber: 60,
+                                lineNumber: 59,
                                 columnNumber: 11
                             }, undefined),
                             openSettings && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -58605,30 +58596,30 @@ const Sidebar = ()=>{
                                                     children: item.icon
                                                 }, void 0, false, {
                                                     fileName: "src/components/sidebar.jsx",
-                                                    lineNumber: 83,
+                                                    lineNumber: 82,
                                                     columnNumber: 21
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                     children: item.label
                                                 }, void 0, false, {
                                                     fileName: "src/components/sidebar.jsx",
-                                                    lineNumber: 84,
+                                                    lineNumber: 83,
                                                     columnNumber: 21
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/sidebar.jsx",
-                                            lineNumber: 82,
+                                            lineNumber: 81,
                                             columnNumber: 19
                                         }, undefined)
                                     }, item.path, false, {
                                         fileName: "src/components/sidebar.jsx",
-                                        lineNumber: 78,
+                                        lineNumber: 77,
                                         columnNumber: 17
                                     }, undefined))
                             }, void 0, false, {
                                 fileName: "src/components/sidebar.jsx",
-                                lineNumber: 76,
+                                lineNumber: 75,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -58641,37 +58632,37 @@ const Sidebar = ()=>{
                                         className: "icon",
                                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _fa.FaSignOutAlt), {}, void 0, false, {
                                             fileName: "src/components/sidebar.jsx",
-                                            lineNumber: 94,
+                                            lineNumber: 93,
                                             columnNumber: 15
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/components/sidebar.jsx",
-                                        lineNumber: 93,
+                                        lineNumber: 92,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                         children: "Keluar"
                                     }, void 0, false, {
                                         fileName: "src/components/sidebar.jsx",
-                                        lineNumber: 96,
+                                        lineNumber: 95,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/sidebar.jsx",
-                                lineNumber: 92,
+                                lineNumber: 91,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/sidebar.jsx",
-                        lineNumber: 47,
+                        lineNumber: 46,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/sidebar.jsx",
-                lineNumber: 45,
+                lineNumber: 44,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _logoutPopupDefault.default), {
@@ -58679,7 +58670,7 @@ const Sidebar = ()=>{
                 onClose: ()=>setShowLogout(false)
             }, void 0, false, {
                 fileName: "src/components/sidebar.jsx",
-                lineNumber: 102,
+                lineNumber: 101,
                 columnNumber: 7
             }, undefined)
         ]
