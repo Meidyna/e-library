@@ -33,7 +33,6 @@ const Sidebar = () => {
       label: "Peminjaman Aktif",
       icon: <FaClipboardList />,
     },
-    { path: "/jatuh-tempo", label: "Jatuh Tempo", icon: <FaCalendarAlt /> },
   ];
 
   const settingsItems = [
