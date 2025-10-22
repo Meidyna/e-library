@@ -1,0 +1,66 @@
+import React from "react";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+
+import Home from "../pages/home";
+import Login from "../pages/login";
+import Register from "../pages/register";
+import Profile from "../pages/profil";
+import DetailBuku from "../pages/detailBuku";
+import LogoutPopup from "../pages/logoutPopup";
+import Notifikasi from "../pages/notifikasi";
+import PeminjamanAktif from "../pages/peminjamanAktif";
+import PinjamBuku from "../pages/pinjamBuku";
+import TotalBuku from "../pages/totalBuku";
+import UbahPassword from "../pages/ubahPassword";
+import Sidebar from "../components/sidebar"; // pastikan path sudah benar
+
+// Komponen pembungkus agar Sidebar bisa beradaptasi dengan route
+function AppRoutes() {
+  const location = useLocation();
+
+  // Daftar halaman yang TIDAK menampilkan sidebar
+  const hideSidebar = ["/", "/login", "/register"].includes(location.pathname);
+
+  return (
+    <div style={{ display: "flex" }}>
+      {/* Sidebar hanya tampil jika bukan halaman login/register */}
+      {!hideSidebar && <Sidebar />}
+
+      {/* Konten utama */}
+      <div
+        style={{
+          flex: 1,
+          marginLeft: hideSidebar ? "0" : "230px", // beri jarak agar konten tidak tertutup sidebar
+          padding: "20px",
+          transition: "margin 0.3s ease",
+        }}
+      >
+        <Routes>
+          {/* Halaman tanpa sidebar */}
+          <Route path="/" element={<Login />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+
+          {/* Halaman dengan sidebar */}
+          <Route path="/home" element={<Home />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/detail-buku/:id" element={<DetailBuku />} />
+          <Route path="/notifikasi" element={<Notifikasi />} />
+          <Route path="/peminjamanAktif" element={<PeminjamanAktif />} />
+          <Route path="/pinjamBuku" element={<PinjamBuku />} />
+          <Route path="/total-buku" element={<TotalBuku />} />
+          <Route path="/ubah-password" element={<UbahPassword />} />
+        </Routes>
+      </div>
+    </div>
+  );
+}
+
+// Komponen utama router aplikasi
+export default function AppRouter() {
+  return (
+    <BrowserRouter>
+      <AppRoutes />
+    </BrowserRouter>
+  );
+}
