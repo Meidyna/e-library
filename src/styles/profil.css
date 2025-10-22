@@ -119,10 +119,10 @@ html {
 
 .ubah-password-btn {
   width: 100%;
-  background-color: #ff8356;
+  background-color: #6756ff;
   color: white;
   border: none;
-  padding: 8px;
+  padding: 10px;
   border-radius: 10px;
   font-weight: 600;
   font-size: 1rem;
@@ -131,17 +131,16 @@ html {
 }
 
 .ubah-password-btn:hover {
-  background-color: #f8723a;
+  background-color: #3906d1;
 }
 
 .simpan-btn {
   display: block;
   width: 100%;
-  background-color: #4b4ded;
   color: white;
   border: none;
-  padding: 10px 0;
-  border-radius: 8px;
+  padding: 10px;
+  border-radius: 10px;
   font-weight: 600;
   font-size: 1rem;
   cursor: pointer;

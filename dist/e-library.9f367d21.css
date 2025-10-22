@@ -469,37 +469,32 @@ body, html {
 .ubah-password-btn {
   color: #fff;
   cursor: pointer;
-  background-color: #ff8356;
+  background-color: #6756ff;
   border: none;
   border-radius: 10px;
   width: 100%;
-  padding: 8px;
+  padding: 10px;
   font-size: 1rem;
   font-weight: 600;
   transition: all .3s;
 }
 
 .ubah-password-btn:hover {
-  background-color: #f8723a;
+  background-color: #3906d1;
 }
 
 .simpan-btn {
   color: #fff;
   cursor: pointer;
-  background-color: #4b4ded;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   width: 100%;
   margin-top: 10px;
-  padding: 10px 0;
+  padding: 10px;
   font-size: 1rem;
   font-weight: 600;
   transition: all .3s;
   display: block;
-}
-
-.simpan-btn:hover {
-  background-color: #2e2f91;
 }
 
 .notif-popup {
@@ -546,6 +541,96 @@ body, html {
   }
 }
 
+.notifikasi-container {
+  background-color: #f6f7fb;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 50px 20px;
+  font-family: Poppins, sans-serif;
+  display: flex;
+}
+
+.notifikasi-title {
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.notifikasi-box {
+  border: 1px solid #0000;
+  border-radius: 12px;
+  align-items: flex-start;
+  gap: 15px;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+  padding: 20px;
+  transition: all .3s;
+  display: flex;
+  box-shadow: 0 3px 8px #00000014;
+}
+
+.icon {
+  border-radius: 6px;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+}
+
+.text h4 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.text p {
+  color: #555;
+  margin: 4px 0 0;
+  font-size: .95rem;
+}
+
+.success {
+  background-color: #e9fbf0;
+  border-color: #c1f1d2;
+}
+
+.success .icon {
+  color: #fff;
+  background-color: #3ac57d;
+}
+
+.reminder {
+  background-color: #fff8e5;
+  border-color: #ffe8b2;
+}
+
+.reminder .icon {
+  color: #fff;
+  background-color: #f5b400;
+}
+
+.warning {
+  background-color: #ffeaea;
+  border-color: #ffc9c9;
+}
+
+.warning .icon {
+  color: #fff;
+  background-color: #e14b4b;
+}
+
+.notifikasi-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px #0000001f;
+}
+
 .pinjam-container {
   flex: 1;
   height: 100vh;
@@ -568,10 +653,6 @@ body, html {
   margin: 0 auto;
   padding: 25px;
   box-shadow: 0 4px 10px #0000000d;
-}
-
-.form-group {
-  margin-bottom: 20px;
 }
 
 .form-group label {
@@ -607,6 +688,103 @@ body, html {
 
 .submit-btn:hover {
   background-color: #554fd8;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  background-color: #f3f5fc;
+  width: 100%;
+  height: 100%;
+}
+
+.ubahpassword-container {
+  background-color: #f3f5fc;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px 0;
+  display: flex;
+}
+
+.ubahpassword-box {
+  text-align: left;
+  background-color: #fff;
+  border: 2px solid #3f37c9;
+  border-radius: 14px;
+  width: 400px;
+  padding: 40px;
+  box-shadow: 0 4px 20px #0000001a;
+}
+
+.ubahpassword-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.ubahpassword-subtitle {
+  text-align: center;
+  color: #9c9c9c;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  color: #333;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  display: block;
+}
+
+.input-wrapper {
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.input-wrapper input {
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  width: 100%;
+  padding: 10px 38px 10px 12px;
+  font-size: 14px;
+}
+
+.input-wrapper span {
+  cursor: pointer;
+  color: #666;
+  font-size: 16px;
+  position: absolute;
+  right: 12px;
+}
+
+.simpan-btn {
+  color: #fff;
+  cursor: pointer;
+  background-color: #f77f54;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: background .3s;
+}
+
+.simpan-btn:hover {
+  background-color: #f46435;
 }
 
 .sidebar {

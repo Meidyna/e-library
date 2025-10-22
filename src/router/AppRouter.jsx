@@ -45,11 +45,11 @@ function AppRoutes() {
           <Route path="/home" element={<Home />} />
           <Route path="/profil" element={<Profile />} />
           <Route path="/detail-buku/:id" element={<DetailBuku />} />
-          <Route path="/notifikasi" element={<Notifikasi />} />
+          <Route path="/notification" element={<Notifikasi />} />
           <Route path="/peminjamanAktif" element={<PeminjamanAktif />} />
           <Route path="/pinjamBuku" element={<PinjamBuku />} />
-          <Route path="/total-buku" element={<TotalBuku />} />
-          <Route path="/ubah-password" element={<UbahPassword />} />
+          <Route path="/totalBuku" element={<TotalBuku />} />
+          <Route path="/ubahPassword" element={<UbahPassword />} />
         </Routes>
       </div>
     </div>

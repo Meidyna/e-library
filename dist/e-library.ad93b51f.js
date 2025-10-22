@@ -17568,11 +17568,11 @@ function AppRoutes() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                            path: "/notifikasi",
+                            path: "/notification",
                             element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _notifikasiDefault.default), {}, void 0, false, {
                                 fileName: "src/router/AppRouter.jsx",
                                 lineNumber: 48,
-                                columnNumber: 46
+                                columnNumber: 48
                             }, void 0)
                         }, void 0, false, {
                             fileName: "src/router/AppRouter.jsx",
@@ -17604,11 +17604,11 @@ function AppRoutes() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                            path: "/total-buku",
+                            path: "/totalBuku",
                             element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _totalBukuDefault.default), {}, void 0, false, {
                                 fileName: "src/router/AppRouter.jsx",
                                 lineNumber: 51,
-                                columnNumber: 46
+                                columnNumber: 45
                             }, void 0)
                         }, void 0, false, {
                             fileName: "src/router/AppRouter.jsx",
@@ -17616,11 +17616,11 @@ function AppRoutes() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                            path: "/ubah-password",
+                            path: "/ubahPassword",
                             element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ubahPasswordDefault.default), {}, void 0, false, {
                                 fileName: "src/router/AppRouter.jsx",
                                 lineNumber: 52,
-                                columnNumber: 49
+                                columnNumber: 48
                             }, void 0)
                         }, void 0, false, {
                             fileName: "src/router/AppRouter.jsx",
@@ -57479,8 +57479,169 @@ module.exports = module.bundle.resolve("profil.011a218b.png") + "?" + Date.now()
 },{}],"hBZQP":[function(require,module,exports,__globalThis) {
 
 },{}],"6NLnB":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$e2f3 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$e2f3.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$e2f3.prelude(module);
 
-},{}],"hyyqK":[function(require,module,exports,__globalThis) {
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _notifikasiCss = require("../styles/notifikasi.css");
+function Notifikasi() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "notifikasi-container",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                className: "notifikasi-title",
+                children: "Notifikasi"
+            }, void 0, false, {
+                fileName: "src/pages/notifikasi.jsx",
+                lineNumber: 7,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "notifikasi-box success",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "icon",
+                        children: "\u2714"
+                    }, void 0, false, {
+                        fileName: "src/pages/notifikasi.jsx",
+                        lineNumber: 10,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "text",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                                children: "Berhasil"
+                            }, void 0, false, {
+                                fileName: "src/pages/notifikasi.jsx",
+                                lineNumber: 12,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                children: "Peminjaman buku berhasil dibuat"
+                            }, void 0, false, {
+                                fileName: "src/pages/notifikasi.jsx",
+                                lineNumber: 13,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/pages/notifikasi.jsx",
+                        lineNumber: 11,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/pages/notifikasi.jsx",
+                lineNumber: 9,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "notifikasi-box reminder",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "icon",
+                        children: "!"
+                    }, void 0, false, {
+                        fileName: "src/pages/notifikasi.jsx",
+                        lineNumber: 18,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "text",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                                children: "Pengingat"
+                            }, void 0, false, {
+                                fileName: "src/pages/notifikasi.jsx",
+                                lineNumber: 20,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                children: "Buku yang dipinjam pada tanggal 24/06/2025 akan segera jatuh tempo"
+                            }, void 0, false, {
+                                fileName: "src/pages/notifikasi.jsx",
+                                lineNumber: 21,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/pages/notifikasi.jsx",
+                        lineNumber: 19,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/pages/notifikasi.jsx",
+                lineNumber: 17,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "notifikasi-box warning",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "icon",
+                        children: "\u2716"
+                    }, void 0, false, {
+                        fileName: "src/pages/notifikasi.jsx",
+                        lineNumber: 28,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "text",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                                children: "Peringatan"
+                            }, void 0, false, {
+                                fileName: "src/pages/notifikasi.jsx",
+                                lineNumber: 30,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                children: "Buku yang dipinjam pada tanggal 26/03/2025 sudah jatuh tempo"
+                            }, void 0, false, {
+                                fileName: "src/pages/notifikasi.jsx",
+                                lineNumber: 31,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/pages/notifikasi.jsx",
+                        lineNumber: 29,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/pages/notifikasi.jsx",
+                lineNumber: 27,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/pages/notifikasi.jsx",
+        lineNumber: 6,
+        columnNumber: 5
+    }, this);
+}
+_c = Notifikasi;
+exports.default = Notifikasi;
+var _c;
+$RefreshReg$(_c, "Notifikasi");
+
+  $parcel$ReactRefreshHelpers$e2f3.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","../styles/notifikasi.css":"gEJ31","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"gEJ31":[function() {},{}],"hyyqK":[function(require,module,exports,__globalThis) {
 
 },{}],"6ln0r":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$4a26 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
@@ -57770,8 +57931,224 @@ $RefreshReg$(_c, "PinjamBuku");
 },{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","../styles/pinjamBuku.css":"cA9YE","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"cA9YE":[function() {},{}],"3xjX9":[function(require,module,exports,__globalThis) {
 
 },{}],"bmBZU":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$e086 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$e086.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$e086.prelude(module);
 
-},{}],"2ZI4q":[function(require,module,exports,__globalThis) {
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _ubahPasswordCss = require("../styles/ubahPassword.css");
+var _fa = require("react-icons/fa");
+var _s = $RefreshSig$();
+const UbahPassword = ()=>{
+    _s();
+    const [showPassword, setShowPassword] = (0, _react.useState)({
+        lama: false,
+        baru: false,
+        verifikasi: false
+    });
+    const togglePassword = (field)=>{
+        setShowPassword({
+            ...showPassword,
+            [field]: !showPassword[field]
+        });
+    };
+    const handleSubmit = (e)=>{
+        e.preventDefault();
+        alert("Password berhasil disimpan!");
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "ubahpassword-container",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "ubahpassword-box",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    className: "ubahpassword-title",
+                    children: "Ubah Password"
+                }, void 0, false, {
+                    fileName: "src/pages/ubahPassword.jsx",
+                    lineNumber: 24,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    className: "ubahpassword-subtitle",
+                    children: "Ubah Password Anda Disini"
+                }, void 0, false, {
+                    fileName: "src/pages/ubahPassword.jsx",
+                    lineNumber: 25,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+                    onSubmit: handleSubmit,
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "form-group",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                    children: "Password Lama"
+                                }, void 0, false, {
+                                    fileName: "src/pages/ubahPassword.jsx",
+                                    lineNumber: 30,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "input-wrapper",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                            type: showPassword.lama ? "text" : "password",
+                                            placeholder: "",
+                                            required: true
+                                        }, void 0, false, {
+                                            fileName: "src/pages/ubahPassword.jsx",
+                                            lineNumber: 32,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            onClick: ()=>togglePassword("lama")
+                                        }, void 0, false, {
+                                            fileName: "src/pages/ubahPassword.jsx",
+                                            lineNumber: 37,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/pages/ubahPassword.jsx",
+                                    lineNumber: 31,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/pages/ubahPassword.jsx",
+                            lineNumber: 29,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "form-group",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                    children: "Password Baru"
+                                }, void 0, false, {
+                                    fileName: "src/pages/ubahPassword.jsx",
+                                    lineNumber: 43,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "input-wrapper",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                            type: showPassword.baru ? "text" : "password",
+                                            placeholder: "",
+                                            required: true
+                                        }, void 0, false, {
+                                            fileName: "src/pages/ubahPassword.jsx",
+                                            lineNumber: 45,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            onClick: ()=>togglePassword("baru")
+                                        }, void 0, false, {
+                                            fileName: "src/pages/ubahPassword.jsx",
+                                            lineNumber: 50,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/pages/ubahPassword.jsx",
+                                    lineNumber: 44,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/pages/ubahPassword.jsx",
+                            lineNumber: 42,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "form-group",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                    children: "Verifikasi Password Baru"
+                                }, void 0, false, {
+                                    fileName: "src/pages/ubahPassword.jsx",
+                                    lineNumber: 56,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "input-wrapper",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                            type: showPassword.verifikasi ? "text" : "password",
+                                            placeholder: "",
+                                            required: true
+                                        }, void 0, false, {
+                                            fileName: "src/pages/ubahPassword.jsx",
+                                            lineNumber: 58,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            onClick: ()=>togglePassword("verifikasi")
+                                        }, void 0, false, {
+                                            fileName: "src/pages/ubahPassword.jsx",
+                                            lineNumber: 63,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/pages/ubahPassword.jsx",
+                                    lineNumber: 57,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/pages/ubahPassword.jsx",
+                            lineNumber: 55,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            type: "submit",
+                            className: "simpan-btn",
+                            children: "Simpan Password"
+                        }, void 0, false, {
+                            fileName: "src/pages/ubahPassword.jsx",
+                            lineNumber: 67,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/pages/ubahPassword.jsx",
+                    lineNumber: 27,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/pages/ubahPassword.jsx",
+            lineNumber: 23,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/pages/ubahPassword.jsx",
+        lineNumber: 22,
+        columnNumber: 5
+    }, undefined);
+};
+_s(UbahPassword, "Jm0w0/sJAVIJWrChw/taguJlwTU=");
+_c = UbahPassword;
+exports.default = UbahPassword;
+var _c;
+$RefreshReg$(_c, "UbahPassword");
+
+  $parcel$ReactRefreshHelpers$e086.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","../styles/ubahPassword.css":"DugWD","react-icons/fa":"dS1yL","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"DugWD":[function() {},{}],"2ZI4q":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$c247 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$c247.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
