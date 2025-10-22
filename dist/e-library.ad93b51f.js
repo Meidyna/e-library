@@ -17580,11 +17580,11 @@ function AppRoutes() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                            path: "/peminjamanAktif",
+                            path: "/peminjaman",
                             element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _peminjamanAktifDefault.default), {}, void 0, false, {
                                 fileName: "src/router/AppRouter.jsx",
                                 lineNumber: 49,
-                                columnNumber: 51
+                                columnNumber: 46
                             }, void 0)
                         }, void 0, false, {
                             fileName: "src/router/AppRouter.jsx",
@@ -57642,8 +57642,153 @@ $RefreshReg$(_c, "Notifikasi");
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
 },{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","../styles/notifikasi.css":"gEJ31","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"gEJ31":[function() {},{}],"hyyqK":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$9f1a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$9f1a.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$9f1a.prelude(module);
 
-},{}],"6ln0r":[function(require,module,exports,__globalThis) {
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>PeminjamanAktif);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _peminjamanAktifCss = require("../styles/peminjamanAktif.css");
+var _s = $RefreshSig$();
+function PeminjamanAktif() {
+    _s();
+    const [user, setUser] = (0, _react.useState)(null);
+    const [peminjaman, setPeminjaman] = (0, _react.useState)([]);
+    (0, _react.useEffect)(()=>{
+        const userData = JSON.parse(localStorage.getItem("user"));
+        const peminjamanData = JSON.parse(localStorage.getItem("peminjamanAktif")) || [];
+        setUser(userData);
+        setPeminjaman(peminjamanData);
+    }, []);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "peminjaman-container",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                className: "judul-halaman",
+                children: "Peminjaman Aktif"
+            }, void 0, false, {
+                fileName: "src/pages/peminjamanAktif.jsx",
+                lineNumber: 19,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "info-section",
+                children: [
+                    user && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        children: [
+                            "Halo ",
+                            user.username,
+                            "!"
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/pages/peminjamanAktif.jsx",
+                        lineNumber: 22,
+                        columnNumber: 18
+                    }, this),
+                    peminjaman.length > 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: [
+                            "Kamu sedang meminjam ",
+                            peminjaman.length,
+                            " buku."
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/pages/peminjamanAktif.jsx",
+                        lineNumber: 24,
+                        columnNumber: 11
+                    }, this) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: "Belum ada buku yang dipinjam."
+                    }, void 0, false, {
+                        fileName: "src/pages/peminjamanAktif.jsx",
+                        lineNumber: 26,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/pages/peminjamanAktif.jsx",
+                lineNumber: 21,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "daftar-buku",
+                children: peminjaman.map((buku, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "buku-card",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                src: buku.cover,
+                                alt: buku.judul,
+                                className: "buku-cover"
+                            }, void 0, false, {
+                                fileName: "src/pages/peminjamanAktif.jsx",
+                                lineNumber: 33,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: "buku-judul",
+                                children: buku.judul
+                            }, void 0, false, {
+                                fileName: "src/pages/peminjamanAktif.jsx",
+                                lineNumber: 34,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "buku-status",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: `status-dot ${buku.status === "Masih Aktif" ? "hijau" : buku.status === "Terlambat" ? "merah" : "oranye"}`
+                                    }, void 0, false, {
+                                        fileName: "src/pages/peminjamanAktif.jsx",
+                                        lineNumber: 36,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        children: buku.status
+                                    }, void 0, false, {
+                                        fileName: "src/pages/peminjamanAktif.jsx",
+                                        lineNumber: 45,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/pages/peminjamanAktif.jsx",
+                                lineNumber: 35,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, index, true, {
+                        fileName: "src/pages/peminjamanAktif.jsx",
+                        lineNumber: 32,
+                        columnNumber: 11
+                    }, this))
+            }, void 0, false, {
+                fileName: "src/pages/peminjamanAktif.jsx",
+                lineNumber: 30,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/pages/peminjamanAktif.jsx",
+        lineNumber: 18,
+        columnNumber: 5
+    }, this);
+}
+_s(PeminjamanAktif, "c3/VOdPD9/HTRHjg41ocMwBxd38=");
+_c = PeminjamanAktif;
+var _c;
+$RefreshReg$(_c, "PeminjamanAktif");
+
+  $parcel$ReactRefreshHelpers$9f1a.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","../styles/peminjamanAktif.css":"8F5fD"}],"8F5fD":[function() {},{}],"6ln0r":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$4a26 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$4a26.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -57899,7 +58044,7 @@ function PinjamBuku() {
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                         type: "submit",
                         className: "submit-btn",
-                        children: "Simpan"
+                        children: "Buat Pinjaman"
                     }, void 0, false, {
                         fileName: "src/pages/pinjamBuku.jsx",
                         lineNumber: 128,

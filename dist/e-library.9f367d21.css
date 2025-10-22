@@ -631,6 +631,81 @@ body, html {
   box-shadow: 0 6px 12px #0000001f;
 }
 
+.peminjaman-container {
+  background-color: #f7f8fc;
+  min-height: 100vh;
+  padding: 40px;
+}
+
+.judul-halaman {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.info-section {
+  text-align: left;
+  margin-bottom: 30px;
+  margin-left: 60px;
+}
+
+.info-section h3 {
+  color: #3b28cc;
+  margin-bottom: 5px;
+}
+
+.daftar-buku {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  display: flex;
+}
+
+.buku-card {
+  text-align: center;
+}
+
+.buku-cover {
+  object-fit: cover;
+  border-radius: 8px;
+  width: 130px;
+  height: 190px;
+  box-shadow: 0 4px 6px #0003;
+}
+
+.buku-judul {
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+.buku-status {
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-top: 4px;
+  font-size: 13px;
+  display: flex;
+}
+
+.status-dot {
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+}
+
+.hijau {
+  background-color: green;
+}
+
+.merah {
+  background-color: red;
+}
+
+.oranye {
+  background-color: orange;
+}
+
 .pinjam-container {
   flex: 1;
   height: 100vh;

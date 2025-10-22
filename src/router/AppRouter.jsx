@@ -46,7 +46,7 @@ function AppRoutes() {
           <Route path="/profil" element={<Profile />} />
           <Route path="/detail-buku/:id" element={<DetailBuku />} />
           <Route path="/notification" element={<Notifikasi />} />
-          <Route path="/peminjamanAktif" element={<PeminjamanAktif />} />
+          <Route path="/peminjaman" element={<PeminjamanAktif />} />
           <Route path="/pinjamBuku" element={<PinjamBuku />} />
           <Route path="/totalBuku" element={<TotalBuku />} />
           <Route path="/ubahPassword" element={<UbahPassword />} />

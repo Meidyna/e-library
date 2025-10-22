@@ -126,7 +126,7 @@ export default function PinjamBuku() {
         </div>
 
         <button type="submit" className="submit-btn">
-          Simpan
+          Buat Pinjaman
         </button>
       </form>
     </div>
