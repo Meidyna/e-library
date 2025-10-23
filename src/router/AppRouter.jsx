@@ -48,7 +48,7 @@ function AppRoutes() {
           {/* Halaman dengan sidebar */}
           <Route path="/home" element={<Home />} />
           <Route path="/profil" element={<Profile />} />
-          <Route path="/detail-buku/:id" element={<DetailBuku />} />
+          <Route path="/detailBuku" element={<DetailBuku />} />
           <Route path="/notification" element={<Notifikasi />} />
           <Route path="/peminjaman" element={<PeminjamanAktif />} />
           <Route path="/pinjamBuku" element={<PinjamBuku />} />

@@ -17572,11 +17572,11 @@ function AppRoutes() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                            path: "/detail-buku/:id",
+                            path: "/detailBuku",
                             element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _detailBukuDefault.default), {}, void 0, false, {
                                 fileName: "src/router/AppRouter.jsx",
                                 lineNumber: 51,
-                                columnNumber: 51
+                                columnNumber: 46
                             }, void 0)
                         }, void 0, false, {
                             fileName: "src/router/AppRouter.jsx",
@@ -57444,6 +57444,318 @@ $RefreshReg$(_c, "Profil");
 module.exports = module.bundle.resolve("profil.011a218b.png") + "?" + Date.now();
 
 },{}],"hBZQP":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$55a3 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$55a3.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$55a3.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
+var _detailBukuCss = require("../styles/detailBuku.css");
+var _s = $RefreshSig$();
+const gambarBuku = new URL(require("93890fdec1a5d88f")).href;
+const DetailBuku = ()=>{
+    _s();
+    const navigate = (0, _reactRouterDom.useNavigate)();
+    const handlePinjamClick = ()=>{
+        navigate("/pinjamBuku");
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "detailbuku-container",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "detailbuku-header",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        className: "back-text"
+                    }, void 0, false, {
+                        fileName: "src/pages/detailBuku.jsx",
+                        lineNumber: 17,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                        children: "Detail Buku"
+                    }, void 0, false, {
+                        fileName: "src/pages/detailBuku.jsx",
+                        lineNumber: 18,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/pages/detailBuku.jsx",
+                lineNumber: 16,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "detailbuku-content",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        src: gambarBuku,
+                        alt: "Hujan",
+                        className: "cover-buku"
+                    }, void 0, false, {
+                        fileName: "src/pages/detailBuku.jsx",
+                        lineNumber: 22,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        className: "judul-buku",
+                        children: "Hujan"
+                    }, void 0, false, {
+                        fileName: "src/pages/detailBuku.jsx",
+                        lineNumber: 23,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        className: "penulis",
+                        children: "Tere Liye"
+                    }, void 0, false, {
+                        fileName: "src/pages/detailBuku.jsx",
+                        lineNumber: 24,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "detail-card",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                        children: "Judul Buku dan Penulis"
+                                    }, void 0, false, {
+                                        fileName: "src/pages/detailBuku.jsx",
+                                        lineNumber: 28,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                        fileName: "src/pages/detailBuku.jsx",
+                                        lineNumber: 29,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    "Hujan \u2013 Tere Liye"
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/pages/detailBuku.jsx",
+                                lineNumber: 27,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                        children: "Penerbit"
+                                    }, void 0, false, {
+                                        fileName: "src/pages/detailBuku.jsx",
+                                        lineNumber: 33,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                        fileName: "src/pages/detailBuku.jsx",
+                                        lineNumber: 34,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    "Gramedia Pustaka Utama"
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/pages/detailBuku.jsx",
+                                lineNumber: 32,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                        children: "Kategori"
+                                    }, void 0, false, {
+                                        fileName: "src/pages/detailBuku.jsx",
+                                        lineNumber: 38,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                        fileName: "src/pages/detailBuku.jsx",
+                                        lineNumber: 39,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    "Fiksi / Novel"
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/pages/detailBuku.jsx",
+                                lineNumber: 37,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                        children: "Tahun Terbit"
+                                    }, void 0, false, {
+                                        fileName: "src/pages/detailBuku.jsx",
+                                        lineNumber: 43,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                        fileName: "src/pages/detailBuku.jsx",
+                                        lineNumber: 44,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    "2016"
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/pages/detailBuku.jsx",
+                                lineNumber: 42,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                        children: "Jumlah Halaman"
+                                    }, void 0, false, {
+                                        fileName: "src/pages/detailBuku.jsx",
+                                        lineNumber: 48,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                        fileName: "src/pages/detailBuku.jsx",
+                                        lineNumber: 49,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    "320 Halaman"
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/pages/detailBuku.jsx",
+                                lineNumber: 47,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                        children: "ISBN"
+                                    }, void 0, false, {
+                                        fileName: "src/pages/detailBuku.jsx",
+                                        lineNumber: 53,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                        fileName: "src/pages/detailBuku.jsx",
+                                        lineNumber: 54,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    "978-602-03-2478-2"
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/pages/detailBuku.jsx",
+                                lineNumber: 52,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                        children: "Sinopsis"
+                                    }, void 0, false, {
+                                        fileName: "src/pages/detailBuku.jsx",
+                                        lineNumber: 58,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                        fileName: "src/pages/detailBuku.jsx",
+                                        lineNumber: 59,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    "Novel Hujan menceritakan kisah Lail dan Esok yang kehilangan orang tua akibat letusan gunung berapi dahsyat. Dalam perjalanan hidup yang penuh perjuangan, keduanya tumbuh bersama dan menghadapi pilihan sulit antara cinta, pengorbanan, dan pengharapan. Cerita ini mengajarkan arti kehilangan, waktu, dan kekuatan hati manusia."
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/pages/detailBuku.jsx",
+                                lineNumber: 57,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                        children: "Stok Buku"
+                                    }, void 0, false, {
+                                        fileName: "src/pages/detailBuku.jsx",
+                                        lineNumber: 67,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                        fileName: "src/pages/detailBuku.jsx",
+                                        lineNumber: 68,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "stok tersedia",
+                                        children: "Tersedia: 2"
+                                    }, void 0, false, {
+                                        fileName: "src/pages/detailBuku.jsx",
+                                        lineNumber: 69,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                        fileName: "src/pages/detailBuku.jsx",
+                                        lineNumber: 70,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "stok dipinjam",
+                                        children: "Dipinjam: 3"
+                                    }, void 0, false, {
+                                        fileName: "src/pages/detailBuku.jsx",
+                                        lineNumber: 71,
+                                        columnNumber: 13
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/pages/detailBuku.jsx",
+                                lineNumber: 66,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/pages/detailBuku.jsx",
+                        lineNumber: 26,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        className: "btn-pinjam",
+                        onClick: handlePinjamClick,
+                        children: "Pinjam Buku"
+                    }, void 0, false, {
+                        fileName: "src/pages/detailBuku.jsx",
+                        lineNumber: 75,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/pages/detailBuku.jsx",
+                lineNumber: 21,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/pages/detailBuku.jsx",
+        lineNumber: 15,
+        columnNumber: 5
+    }, undefined);
+};
+_s(DetailBuku, "CzcTeTziyjMsSrAVmHuCCb6+Bfg=", false, function() {
+    return [
+        (0, _reactRouterDom.useNavigate)
+    ];
+});
+_c = DetailBuku;
+exports.default = DetailBuku;
+var _c;
+$RefreshReg$(_c, "DetailBuku");
+
+  $parcel$ReactRefreshHelpers$55a3.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-router-dom":"61z4w","../styles/detailBuku.css":"9VpTv","93890fdec1a5d88f":"kAw1L","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"9VpTv":[function() {},{}],"kAw1L":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("hujancover.9bba1598.png") + "?" + Date.now();
 
 },{}],"6NLnB":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$e2f3 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");

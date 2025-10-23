@@ -533,6 +533,112 @@ body, html {
   }
 }
 
+.detailbuku-container {
+  box-sizing: border-box;
+  background-color: #f9f9ff;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 40px 20px;
+  font-family: Poppins, sans-serif;
+  display: flex;
+  overflow-y: auto;
+}
+
+.detailbuku-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.back-text {
+  color: silver;
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+
+.detailbuku-content {
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  display: flex;
+}
+
+.cover-buku {
+  border-radius: 8px;
+  width: 180px;
+  height: auto;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px #0000001a;
+}
+
+.judul-buku {
+  color: #2c2c2c;
+  margin-bottom: 6px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.penulis {
+  color: #6a5acd;
+  margin-bottom: 25px;
+  font-size: 15px;
+}
+
+.detail-card {
+  background: #fff;
+  border: 1px solid #a2a2f0;
+  border-radius: 10px;
+  width: 85%;
+  max-width: 850px;
+  margin-bottom: 30px;
+  padding: 30px;
+  line-height: 1.6;
+  box-shadow: 0 3px 12px #00000014;
+}
+
+.detail-card p {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.detail-card strong {
+  color: #000;
+}
+
+.stok {
+  margin-top: 6px;
+  display: block;
+}
+
+.stok.tersedia {
+  color: #0e9f6e;
+  font-weight: 600;
+}
+
+.stok.dipinjam {
+  color: #e63946;
+  font-weight: 600;
+}
+
+.btn-pinjam {
+  color: #fff;
+  cursor: pointer;
+  background-color: #ff754a;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  padding: 12px 70px;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all .3s;
+}
+
+.btn-pinjam:hover {
+  background-color: #e45c30;
+}
+
 .notifikasi-container {
   background-color: #f6f7fb;
   flex-direction: column;
